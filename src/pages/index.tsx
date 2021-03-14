@@ -3,11 +3,11 @@ import React from "react";
 import { GetServerSideProps } from "next";
 
 import styles from "../styles/pages/Home.module.css";
-import { ExperienceBar } from "../components/ExperienceBar/Index";
-import { Profile } from "../components/Profile/Index";
-import { Countdown } from "../components/Countdown/Index";
-import { CompletedChallenges } from "../components/CompletedChallenges/Index";
-import { ChallengeBox } from "../components/ChallengeBox/Index";
+import { ExperienceBar } from "../components/ExperienceBar";
+import { Profile } from "../components/Profile";
+import { Countdown } from "../components/Countdown";
+import { CompletedChallenges } from "../components/CompletedChallenges";
+import { ChallengeBox } from "../components/ChallengeBox";
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { ChallengesProvider } from "../contexts/ChallengesContext";
 

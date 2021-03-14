@@ -43,7 +43,7 @@ export function ChallengesProvider({
 	);
 
 	const [activeChallenge, setActiveChallenge] = useState(null);
-	const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
+	const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(true);
 
 	const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 
@@ -61,6 +61,7 @@ export function ChallengesProvider({
 	function levelUp() {
 		setLevel(level + 1);
 		setIsLevelUpModalOpen(true);
+		new Audio("/levelup.mp3").play();
 	}
 
 	function closeLevelUpModal() {
