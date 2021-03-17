@@ -12,7 +12,15 @@
 	flex: 1;
 
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	/* grid-template-columns: 1fr 1fr; */
+	/* grid-template-columns: repeat(auto-fit, minmax(40rem), 1fr); */
 	gap: 6.25rem;
 	align-content: center;
 }
+
+@media (min-width: 800px) {
+	.container section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+} ;
